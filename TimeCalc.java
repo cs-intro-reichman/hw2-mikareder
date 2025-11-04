@@ -21,7 +21,9 @@ public class TimeCalc {
               if(newhours<10){
                 System.out.println("0"+newhours+ ":"+ newminutes);
             }
-            System.out.println(newhours+ ":"+ newminutes);
+            else{
+                 System.out.println(newhours+ ":"+ newminutes);
+            }
         }
        
     }

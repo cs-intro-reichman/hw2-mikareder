@@ -7,7 +7,7 @@ public class Cheers {
         int length=name.length();
         String aOrAn="";
         for(int i=0; i<length;i++){
-                System.out.print("give me ");
+                System.out.print("Give me ");
                 for(int f=0; f<except.length;f++){
                         if(name.charAt(i)==except[f]){
                                 aOrAn = "an";
