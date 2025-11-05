@@ -25,7 +25,7 @@ public class Cheers {
                 else{
                         System.out.print("a ");
                 }
-                System.out.print(name.charAt(i));
+                System.out.print(name.charAt(i)+": "+name.charAt(i)+"!");
                 System.out.println("");
         }
                 System.out.println("What does that spell?");
