@@ -3,7 +3,7 @@ public class Cheers {
         public static void main(String[] args) {
 	String name=args[0];
         int output=Integer.parseInt(args[1]);
-        char [] except = {'A', 'E', 'F', 'H', 'I', 'L', 'M', 'N', 'O', 'R','S', 'X'};
+        char [] except = {'A','a', 'E','e', 'F','f', 'H','h', 'I','i', 'L','l', 'M','m' ,'N','n', 'O','o', 'R','r','S','s','x', 'X'};
         int length=name.length();
         String aOrAn="";
         for(int i=0; i<length;i++){
@@ -20,12 +20,17 @@ public class Cheers {
                         
                 }
                 if (aOrAn.equals("an")){
-                        System.out.print("an  ");
+                        System.out.print("an ");
                 }
                 else{
-                        System.out.print("a  ");
+                        System.out.print("a ");
                 }
-                System.out.print(name.charAt(i)+": "+name.charAt(i)+"!");
+                if(Character.isUpperCase(name.charAt(i))){
+                        System.out.print(name.charAt(i)+": "+name.charAt(i)+"!");
+                }
+                else{
+                        System.out.print(name.charAt(i)+": "+Character.toUpperCase(name.charAt(i))+"!");
+                }
                 System.out.println("");
         }
                 System.out.println("What does that spell?");
