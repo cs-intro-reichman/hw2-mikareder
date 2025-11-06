@@ -20,9 +20,27 @@ public class CalcPi {
 				number+=2;
 				count++;
 			}
-			System.out.printf("pi according to Java: %23.16f\n " , pi);
-			System.out.printf("pi, approximated: %23.16f\n" , (sum*4));
+			int fieldWidth = 20;
+			int precision = 15;
+			double piApproximated = sum * 4;
+			String label1 = "pi according to Java:";
+			String label2 = "pi, approximated:";
+			int labelWidth = Math.max(label1.length(), label2.length()) + 1;
 
+			double epsilon = 1e-12;
+			boolean isInteger = Math.abs(piApproximated - Math.round(piApproximated)) < epsilon;
+
+			// פורמט: שם (מיישר לשמאל ברוחב labelWidth) + מספר מיישר לשמאל ברוחב fieldWidth
+			System.out.printf("%-" + labelWidth + "s%-" + fieldWidth + "." + precision + "f\n", label1, pi);
+
+			if (isInteger) {
+				System.out.printf("%-" + labelWidth + "s%-" + fieldWidth + ".1f\n", label2, piApproximated);
+			} else {
+				System.out.printf("%-" + labelWidth + "s%-" + fieldWidth + "." + precision + "f\n", label2, piApproximated);
+			}
 		}
+			
+
 	}
+	
 
