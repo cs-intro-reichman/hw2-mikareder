@@ -35,7 +35,7 @@ public class Cheers {
         }
                 System.out.println("What does that spell?");
                 for(int z=0; z<output;z++){
-                        System.out.println(name+ "!!!");
+                        System.out.println(name.toUpperCase()+ "!!!");
                 }
         }
 }
