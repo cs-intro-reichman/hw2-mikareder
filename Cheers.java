@@ -20,16 +20,16 @@ public class Cheers {
                         
                 }
                 if (aOrAn.equals("an")){
-                        System.out.print("an ");
+                        System.out.print("an  ");
                 }
                 else{
-                        System.out.print("a ");
+                        System.out.print("a  ");
                 }
                 if(Character.isUpperCase(name.charAt(i))){
                         System.out.print(name.charAt(i)+": "+name.charAt(i)+"!");
                 }
                 else{
-                        System.out.print(name.charAt(i)+": "+Character.toUpperCase(name.charAt(i))+"!");
+                        System.out.print(Character.toUpperCase(name.charAt(i))+": "+Character.toUpperCase(name.charAt(i))+"!");
                 }
                 System.out.println("");
         }
