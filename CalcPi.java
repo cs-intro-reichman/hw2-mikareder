@@ -36,7 +36,7 @@ public class CalcPi {
 			if (isInteger) {
     			System.out.printf("%s%s%.1f\n", label2, " ".repeat(spacing + 1), piApproximated);
 			} else {
-				System.out.printf("%s%s%.15f\n", label2, " ".repeat(spacing + 1), piApproximated);
+				System.out.printf("%s%s%.16f\n", label2, " ".repeat(spacing + 1), piApproximated);
 			}
 		}
 			
