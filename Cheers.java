@@ -1,3 +1,7 @@
+/*
+Feedback: 
+you havent learned arrays yet
+*/
 
 public class Cheers {
         public static void main(String[] args) {
@@ -39,3 +43,4 @@ public class Cheers {
                 }
         }
 }
+
